@@ -98,7 +98,7 @@
 
 
 (setq exec-path (cons "/usr/local/go/bin" exec-path))
-(add-to-list 'exec-path "/Users/biomunky/go/bin")
+(add-to-list 'exec-path "~/go/bin")
 (add-hook 'before-save-hook 'gofmt-before-save)
 (require 'go-autocomplete)
 
@@ -111,13 +111,12 @@
 ;; Reduce the number of characters before company kicks in
 (setq company-minimum-prefix-length 1)
 
-
 ;; RUST AND CARGO SPECIFIC STUFF FROM: http://jasonamyers.com/index.php/2015/11/21/configuring-emacs-for-rust-development/
 
 ;; Set path to racer binary
-(setq racer-cmd "/Users/biomunky/.cargo/bin/racer")
+(setq racer-cmd "~/.cargo/bin/racer")
 ;; Set path to rust src directory
-(setq racer-rust-src-path "/Users/biomunky/bin/rust/src")
+(setq racer-rust-src-path "~/bin/rust/src")
 ;; Load rust-mode when you open `.rs` files
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 ;; Setting up configurations when you load rust-mode
