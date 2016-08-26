@@ -1,0 +1,11 @@
+.DS_Store
+.cask/
+.smex-items
+COPYING
+ac-comphist.dat
+auto-save-list/
+backups/
+cider-history
+ido.last
+places
+tar.sh

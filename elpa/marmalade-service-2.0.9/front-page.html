@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" href="/-/style.css" type="text/css"></link>
+<title>marmalade-repo - for all your EmacsLisp needs</title>
+</head>
+<body class="home">
+${login-panel}
+<div id="panel">
+<h4>latest</h4>
+<ul>${latest-html}</ul>
+<a href="/packages/new">add a new package</a>
+</div>
+<h1>marmalade</h1>
+<p id="blurb"><i>marmalade-repo</i> is an Emacs package repository.</p>
+
+<p>We hold packages of Emacs code that Emacs users have uploaded for
+your enjoyment and use.</p>
+
+<p>Installing a package from marmalade is as easy as:</p>
+<pre>
+M-: (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+M-x package-install [RET] marmalade-demo
+</pre>
+</body>
+</html>
